@@ -11,3 +11,9 @@ class Accesorios(models.Model):
     nombre=models.CharField(max_length=120, help_text='Nombre del Accesorio')
     cantidad=models.IntegerField(max_length=120, help_text='Cantidad de Accesorios')
     valor=models.FloatField(max_length=120, help_text='Valor del Accesorio')
+
+class Alimentos(models.Model):
+    tipo_mascota=models.CharField(max_length=120, help_text='Alimento para')
+    tipo_alimento=models.CharField(max_length=120, help_text='Tipo de alimento')
+    cantidad=models.IntegerField(max_length=120, help_text='Cantidad de alimento')
+    valor=models.FloatField(max_length=120, help_text='Valor del alimento')

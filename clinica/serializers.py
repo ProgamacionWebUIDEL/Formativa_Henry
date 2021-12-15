@@ -19,3 +19,12 @@ class AccesorioSerializable(serializers.ModelSerializer):
             'cantidad',
             'valor'
         )
+class AlimentoSerializable(serializers.ModelSerializer):
+    class meta:
+        model=Mascotas
+        fields=(
+            'comida',
+            'tipo_alimento',
+            'cantidad',
+            'valor'
+        )
